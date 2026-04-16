@@ -1,12 +1,12 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
     background-color: green;
     overflow: hidden;
+    font-family: 'Instrument', sans-serif;
 }
 
 .container{
@@ -26,10 +26,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1rem;
     padding: 20px;
-    height: 85vh;
+    height: 90vh;
     box-shadow: 1px 0px 8px;
 }
 
@@ -75,13 +75,14 @@ body{
     /* background-color: rgb(255,255,255,0.3); */
     padding: 20px;
     width: 60%;
-    height: 85vh;
+    height: 90vh;
+    box-shadow: 0px 0px 10px;
 }
 
 .sched-container{
-    padding: 20px 20px;
+    padding: 20px 0px;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     text-align: center;
     gap: 1.5em;
@@ -92,7 +93,7 @@ body{
 .sched-box{
     background-color: white;
     border: 2px solid grey;
-    border-radius: 15px;
+    border-radius: 30px;
     box-shadow: 0px 0px 2px;
 }
 
@@ -158,6 +159,11 @@ body{
     border: 2px solid grey;
     border-radius: 10px;
     background-color: white;
+    box-shadow: 0 0 3px;
+}
+
+#link-btn:hover{
+    cursor: pointer;
 }
 
 
@@ -193,3 +199,21 @@ body{
     display: block;
 }
 
+.dropdown-search form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#program-dropdown,
+#search-bar,
+#year-dropdown{
+    border: 1px solid grey;
+    border-radius: 40px;
+    padding: 15px;
+}
+
+#program-dropdown:focus,
+#year-dropdown:focus{
+    border: 1px solid grey;
+}
