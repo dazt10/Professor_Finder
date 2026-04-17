@@ -63,8 +63,71 @@ body{
     font-size: 20px;
 }
 
+/*account nav*/
+.account-navigation {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.889);
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 180px;
+
+}
+
+.account-navigation ul li {
+    list-style: none;
+}
+
+.account-navigation a {
+    text-decoration: none;
+    color: #275100;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.profile:hover .account-navigation {
+    display: block;
+}
+
+.account-navigation::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 28%;
+    transform: translateX(-50%);
+    border-width: 20px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+#account, #settings, #messages, #logout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 0;
+    margin: 5px 0;
+}
+
 .profile{
-    margin-top: 5vh;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#account-circle {
+    width: 90px;
+    height: auto;
+    cursor: pointer;
+
 }
 
 .main-page{
@@ -173,12 +236,12 @@ body{
     color: black;
 }
 
-
+/*sidenav*/
 .sidenav {
     display: none;
     position: absolute;
-    margin-left: 13%;
-    padding: 8px;
+    margin-left: 16.5%;
+    padding: 8px 15px;
     background: rgba(255, 255, 255, 0.889);
     border-radius: 25px;
     box-shadow: 5px 5px 5px grey;
@@ -188,10 +251,11 @@ body{
 .sidenav a{
     display: block;
     text-align: center;
-    background-color: #4B8717;
-    padding: 8px 15px;
+    background: linear-gradient(to bottom, #416720, #619A2F, #81CD3F);
+    padding: 8px 20px;
     margin: 5px 0;
     border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     font-size: 19px;
 }
 
@@ -199,6 +263,18 @@ body{
     display: block;
 }
 
+.sidenav::after {
+    content: "";
+    position: absolute;
+    top: 46px;
+    left: -18%;
+    transform: translateY(-50%);
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+
+/*dropdown*/
 .dropdown-search form{
     display: flex;
     justify-content: space-between;
