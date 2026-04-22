@@ -1,96 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Setting</title>
-    <link rel="stylesheet" href="css/setting.css">
+    <link rel="stylesheet" href="css/setting.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
     />
-</head>
-<body>
-    
-
+  </head>
+  <body>
     <header>
-        <div class="header">
-            <div class="logo-title">
-                <div class="logo">
-                    <img src="" alt="">
-                </div>
-                
-                <div class="title">
-                    <h1>CvSU-MAIN</h1>
-                    <h2>PROFESSOR FINDER</h2>
-                </div>
-            </div>
+      <div class="header">
+        <div class="logo-title">
+          <div class="logo">
+            <img src="assets/images/logo.png" alt="Cvsu Logo" />
+          </div>
 
-            <div class="search-bar">
-                <input type="search" name="search-bar" id="search-bar">
-            </div>
-
-            <nav>
-                <div class="nav-bar">
-                    <ul>
-                        <div class="nav-btn">
-                            <img src="assets/images/icons/home-icon.svg" alt="">
-                            <li><a href="dashboard.html">Home</a></li>
-                        </div>
-                        <div class="nav-btn">
-                            <img src="assets/images/icons/white-book-icon.svg" alt="">
-                            <li><a href="dashboard.html">Schedule</a></li>
-                        </div>
-                        <div class="nav-btn">
-                            <img src="assets/images/icons/white-message icon4.svg" alt="">
-                            <li><a href="message.html">Message</a></li>
-                        </div>
-                    </ul>
-                </div>
-            </nav>
-
-            <div class="menu-nav">
-                <img class="menu-icon" src="assets/images/icons/menu-icon.svg" alt="">
-                <ul class="menu-btn">
-                    <li>Name: </li>
-                    <li>Username: </li>
-                    <div class="hr"></div>
-                    <div class="setting-btn">
-                        <img src="assets/images/icons/small-setting.svg" alt="">
-                        <li><img src="" alt=""><a href="setting.html">Settings</a></li>
-                    </div>
-                    <div class="logout-btn">
-                        <img src="assets/images/icons/setting-logout.svg" alt="">
-                        <li><img src="" alt=""><a href="index.html">Log Out</a></li>
-                    </div>
-                </ul>
-            </div>
-
+          <div class="title">
+            <h1>CvSU-MAIN</h1>
+            <h2>PROFESSOR FINDER</h2>
+          </div>
         </div>
+
+        <div class="search-bar"> 
+          <input type="search" name="search-bar" id="search-bar" placeholder="Search"/>
+          <label for="search-bar"></label>
+        </div>
+
+        <nav>
+          <div class="nav-bar">
+            <ul>
+              <div class="nav-btn">
+                <img src="assets/images/icons/home-icon.svg" alt="" />
+                <li><a href="dashboard.html">Home</a></li>
+              </div>
+              <div class="nav-btn">
+                <img src="assets/images/icons/white-book-icon.svg" alt="" />
+                <li><a href="dashboard.html">Schedule</a></li>
+              </div>
+              <div class="nav-btn">
+                <img src="assets/images/icons/white-message icon4.svg" alt="" />
+                <li><a href="message.html">Message</a></li>
+              </div>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="menu-nav">
+          <img
+            class="menu-icon"
+            src="assets/images/icons/menu-icon.svg"
+            alt=""
+          />
+          <ul class="menu-btn">
+            <p id="name">Name</p>
+            <p id="username">username<p>
+            <div class="hr"></div>
+            <div class="setting-btn">
+              <img src="assets/images/icons/lightgreen settings icon.svg" id="setting-icon" alt="setting icon" />
+              <li><img src="" alt="" /><a href="setting.html">Settings</a></li>
+            </div>
+            <div class="logout-btn">
+              <img src="assets/images/icons/lightgreen logout icon.svg" id="logout-icon" alt="logout icon" />
+              <li><img src="" alt="" /><a href="index.html">Log Out</a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <div class="background-color-container">
-        <img src="assets/images/bg.jpg" id="cvsu-bg">
-        <div class="container">
-
-            <div class="setting-box">
-                <div class="setting-title">
+      <img src="assets/images/bg.jpg" id="cvsu-bg" />
+      
+      <!-- main container -->
+      <div class="container">
+        <!-- setting container -->
+        <div class="setting-box">
+          <div class="setting-title">
+            <h1 id="settings">SETTINGS</h1>
+          </div>
+            <!-- profile container -->
+            <div class="profile-box">
+                <p id="profile"><img src="assets/images/icons/white account icon.svg" id="account-icon"/>Profile</p>
+                <div class="row">
+                    <div>
+                        <p id="label">Name</p>
+                        <p id="value">first name surname</p>
+                    </div>
+                    <div class="row clickable">
+                        <img src="assets/images/icons/right.svg" id="right-icon"/>
+                    </div>
                 </div>
-
-                <div class="profile-box">
-
+                <div class="row">
+                    <div>
+                        <p id="label">Username</p>
+                        <p id="value">username</p>
+                    </div>
+                    <div class="row clickable">
+                        <img src="assets/images/icons/right.svg" id="right-icon"/>
+                    </div>
                 </div>
-
-                <div class="account-setting-box">
-                    
+                <div>
+                    <p id="label">Student Number</p>
+                    <p id="value">000000000</p>
                 </div>
-
+                <div>
+                    <p id="label">CvSU Email</p>
+                    <p id="value">name.surname@cvsu.edu.ph</p>
+                </div>
             </div>
 
-        </div>
+            <!-- account setting container -->
+            <div class="account-setting-box">
+                <p id="account-setting"><img src="assets/images/icons/white account icon.svg" id="account-icon"/>Account Settings</p>
+                <div class="row">
+                    <div>
+                        <p id="label">Password</p>
+                        <p id="value">********</p>
+                    </div>
+                    <div class="row clickable">
+                        <img src="assets/images/icons/right.svg" id="right-icon"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <p id="label">Delete Account</p>
+                        <p id="value">delete existing account</p>
+                    </div>  
+                    <div class="row clickable">
+                        <img src="assets/images/icons/right.svg" id="right-icon"/>
+                    </div>
+                </div>
+                <div>
+                    <p id="label">Logout</p>
+                </div>
+            </div>
 
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
