@@ -1,62 +1,511 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professors</title>
-    <link rel="stylesheet" href="css/professors.css">
-</head>
-<body>
-    
-    <div class="nav">
-        <nav>
-            <div class="prog-nav">
-                <ul>
-                    <li><a href="">CAFENR</a></li>
-                    <li><a href="">CAS</a></li>
-                    <li><a href="">CCJ</a></li>
-                    <li><a href="">CEd</a></li>
-                    <li><a href="">CEIT</a></li>
-                    <li><a href="">CEMDS</a></li>
-                    <li><a href="">COM</a></li>
-                    <li><a href="">CON</a></li>
-                    <li><a href="">CSPEAR</a></li>
-                    <li><a href="">CTHM</a></li>
-                    <li><a href="">CVMBS</a></li>
-                </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Professor</title>
+        <link rel="stylesheet" href="css/professors.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+            rel="stylesheet"
+        />
+        <script defer src="js/jscript.js"></script>
+    </head>
+    <body>
+        <img src="assets/images/bg.jpg" id="cvsu-bg">
+        <div class="container">
+            <div class="nav-box">
+                <div class="program">
+                    <div class="sidenav">
+                        <ul>
+                            <li>
+                                <a href="#" id="viewSchedules">View Schedules</a>
+                            </li>
+                            <li>
+                                <a href="#" id="profFinder">View Prof. Finder</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul>
+                        <li><a href="">CAFENR</a></li>
+                    </ul>
+                </div>
+
+                <div class="program">
+                    <div class="sidenav">
+                        <ul>
+                            <li>
+                                <a href="#" id="viewSchedules">View Schedules</a>
+                            </li>
+                            <li>
+                                <a href="#" id="profFinder">View Prof. Finder</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul>
+                        <li><a href="">CAS</a></li>
+                    </ul>
+                </div>
+
+                <div class="program">
+                    <div class="sidenav">
+                        <ul>
+                            <li>
+                                <a href="#" id="viewSchedules">View Schedules</a>
+                            </li>
+                            <li>
+                                <a href="#" id="profFinder">View Prof. Finder</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul>
+                        <li><a href="">CCJ</a></li>
+                    </ul>
+                </div>
+
+                <div class="program">
+                    <div class="sidenav">
+                        <ul>
+                            <li>
+                                <a href="#" id="viewSchedules">View Schedules</a>
+                            </li>
+                            <li>
+                                <a href="#" id="profFinder">View Prof. Finder</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul>
+                        <li><a href="">CEd</a></li>
+                    </ul>
+                </div>
+
+                <div class="program">
+                    <div class="sidenav">
+                        <ul>
+                            <li>
+                                <a href="#" id="viewSchedules">View Schedules</a>
+                            </li>
+                            <li>
+                                <a href="#" id="profFinder">View Prof. Finder</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul>
+                        <li><a href="">CEIT</a></li>
+                    </ul>
+                </div>
+
+                <div class="program">
+                    <div class="sidenav">
+                        <ul>
+                            <li>
+                                <a href="#" id="viewSchedules">View Schedules</a>
+                            </li>
+                            <li>
+                                <a href="#" id="profFinder">View Prof. Finder</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul>
+                        <li><a href="">CEMDS</a></li>
+                    </ul>
+                </div>
+
+                <div class="program">
+                    <div class="sidenav">
+                        <ul>
+                            <li>
+                                <a href="#" id="viewSchedules">View Schedules</a>
+                            </li>
+                            <li>
+                                <a href="#" id="profFinder">View Prof. Finder</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul>
+                        <li><a href="">COM</a></li>
+                    </ul>
+                </div>
+
+                <div class="program">
+                    <div class="sidenav">
+                        <ul>
+                            <li>
+                                <a href="#" id="viewSchedules">View Schedules</a>
+                            </li>
+                            <li>
+                                <a href="#" id="profFinder">View Prof. Finder</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul>
+                        <li><a href="">CON</a></li>
+                    </ul>
+                </div>
+
+                <div class="program">
+                    <div class="sidenav">
+                        <ul>
+                            <li>
+                                <a href="#" id="viewSchedules">View Schedules</a>
+                            </li>
+                            <li>
+                                <a href="#" id="profFinder">View Prof. Finder</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul>
+                        <li><a href="">CSPEAR</a></li>
+                    </ul>
+                </div>
+
+                <div class="program">
+                    <div class="sidenav">
+                        <ul>
+                            <li>
+                                <a href="#" id="viewSchedules">View Schedules</a>
+                            </li>
+                            <li>
+                                <a href="#" id="profFinder">View Prof. Finder</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul>
+                        <li><a href="">CTHM</a></li>
+                    </ul>
+                </div>
+
+                <div class="program">
+                    <div class="sidenav">
+                        <ul>
+                            <li>
+                                <a href="#" id="viewSchedules">View Schedules</a>
+                            </li>
+                            <li>
+                                <a href="#" id="profFinder">View Prof. Finder</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul>
+                        <li><a href="">CVMBS</a></li>
+                    </ul>
+                </div>
+
+                <div class="profile">
+                    <img
+                        src="assets/images/icons/acc-circle.svg"
+                        alt="account circle"
+                        id="account-circle"
+                    />
+                    <div class="account-navigation">
+                        <ul>
+                            <li>
+                                <a href="#" id="account">
+                                    <img src="assets/images/icons/account icon.svg" />Account
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" id="settings">
+                                    <img src="assets/images/icons/settings icon.svg" />Settings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" id="messages">
+                                    <img src="assets/images/icons/message icon.svg" />Messages
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" id="logout">
+                                    <img src="assets/images/icons/logout icon.svg" />Log out
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="student-info">
+                        <p>Alison Reyes</p>
+                        <p>251014843</p>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </div>
+            <div class="main-page">
+                <div class="dropdown-search">
+                    <div class="program-dropdown">
+                        <button class="program-toggle" id="menuButton">
+                            <span id="button-text">Select a Program</span>
+                        </button>
 
-    <div class="page">
-        <div>
-            <select name="" id="">
-                <option>BS Agricultural and Biosystems Engineering</option>
-                <option>BS Architecture</option>
-                <option>BS Civil Engineering</option>
-                <option>BS Computer Engineering</option>
-                <option>BS Computer Science</option>
-                <option>BS Electrical Engineering</option>
-                <option>BS Electronics Engineering</option>
-                <option>BS Industrial Engineering</option>
-                <option>BS Industrial Technology - Automotive Technology</option>
-                <option>BS Industrial Technology - Electrical Technology</option>
-                <option>BS Industrial Technology - Electronics Technology</option>
-                <option>BS Information Technology</option>
-            </select>
+                        <ul class="program-list" id="menuList">
+                            <li><a href="" class="program-name-list">Agricultural and Biosystems Engineering</a></li>
+                            <li><a href="" class="program-name-list">Architecture</a></li>
+                            <li><a href="" class="program-name-list">Civil Engineering</a></li>
+                            <li><a href="" class="program-name-list">Computer Engineering</a></li>
+                            <li><a href="" class="program-name-list">Computer Science</a></li>
+                            <li><a href="" class="program-name-list">Electrical Engineering</a></li>
+                            <li><a href="" class="program-name-list">Electronics Engineering</a></li>
+                            <li><a href="" class="program-name-list">Industrial Engineering</a></li>
+                            <li><a href="" class="program-name-list">Industrial Technology - Automotive Technology</a></li>
+                            <li><a href="" class="program-name-list">Industrial Technology - Electrical Technology</a></li>
+                            <li><a href="" class="program-name-list">Industrial Technology - Electronics Technology</a></li>
+                            <li><a href="" class="program-name-list">Information Technology</a></li>
+                        </ul>
+                    </div>
+                </div> <div class="subject-container">
 
-            <input type="search" name="" id="">
+                    <div class="subj-box">
+                        <div class="subject-box">
+                            <div class="subject">
+                                <h1>GNED 02</h1>
+                            </div>
 
-            <select>
-                <option>First Year</option>
-                <option>Second Year</option>
-                <option>Third Year</option>
-                <option>Fourth Year</option>
-                <option>Fifth Year</option>
-                <option>Mid Year</option>
-            </select>
-        </div>
-    </div>
+                            <div class="subject-name">
+                                <p>Ethics</p>
+                            </div>
 
-</body>
+                            <div class="year-sem">
+                                <p id="year">1st Year</p>
+                                <p id="sem">1st Sem</p>
+                            </div>
+
+                            <div class="sched-code">
+                                <h3>PROFESSORS:</h3>
+                                <p>202512237 - Karen Mendiola</p>
+                                <p>202512236 - Kevin Francisco</p>
+                                <p>202512235 - Althea Catalan</p>
+                                <p>202512234 - Jerome Garcia</p>
+                                <p>202512333 - Kate Ann Gomez</p>
+                            </div>
+
+                            <div class="two-btn">
+                                <button id="link-btn"><a href="#" id="book"><img src="assets/images/icons/dashboard-book.svg"></a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subj-box">
+                        <div class="subject-box">
+                            <div class="subject">
+                                <h1>GNED 05</h1>
+                            </div>
+
+                            <div class="subject-name">
+                                <p>Purposive Communication</p>
+                            </div>
+
+                            <div class="year-sem">
+                                <p id="year">1st Year</p>
+                                <p id="sem">1st Sem</p>
+                            </div>
+
+                            <div class="sched-code">
+                                <h3>PROFESSORS:</h3>
+                                <p>202512237 - Karen Mendiola</p>
+                                <p>202512236 - Kevin Francisco</p>
+                                <p>202512235 - Althea Catalan</p>
+                                <p>202512234 - Jerome Garcia</p>
+                                <p>202512333 - Kate Ann Gomez</p>
+                            </div>
+
+                            <div class="two-btn">
+                                <button id="link-btn"><a href="#" id="book"><img src="assets/images/icons/dashboard-book.svg"></a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subj-box">
+                        <div class="subject-box">
+                            <div class="subject">
+                                <h1>GNED 11</h1>
+                            </div>
+
+                            <div class="subject-name">
+                                <p>Kontekstwalisadong Komunikasyon sa Filipino</p>
+                            </div>
+
+                            <div class="year-sem">
+                                <p id="year">1st Year</p>
+                                <p id="sem">1st Sem</p>
+                            </div>
+
+                            <div class="sched-code">
+                                <h3>PROFESSORS:</h3>
+                                <p>202512237 - Karen Mendiola</p>
+                                <p>202512236 - Kevin Francisco</p>
+                                <p>202512235 - Althea Catalan</p>
+                                <p>202512234 - Jerome Garcia</p>
+                                <p>202512333 - Kate Ann Gomez</p>
+                            </div>
+
+                            <div class="two-btn">
+                                <button id="link-btn"><a href="#" id="book"><img src="assets/images/icons/dashboard-book.svg"></a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subj-box">
+                        <div class="subject-box">
+                            <div class="subject">
+                                <h1>COSC 50A</h1>
+                            </div>
+
+                            <div class="subject-name">
+                                <p>Discrete Structure 1</p>
+                            </div>
+
+                            <div class="year-sem">
+                                <p id="year">1st Year</p>
+                                <p id="sem">1st Sem</p>
+                            </div>
+
+                            <div class="sched-code">
+                                <h3>PROFESSORS:</h3>
+                                <p>202512237 - Karen Mendiola</p>
+                                <p>202512236 - Kevin Francisco</p>
+                                <p>202512235 - Althea Catalan</p>
+                                <p>202512234 - Jerome Garcia</p>
+                                <p>202512333 - Kate Ann Gomez</p>
+                            </div>
+
+                            <div class="two-btn">
+                                <button id="link-btn"><a href="#" id="book"><img src="assets/images/icons/dashboard-book.svg"></a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subj-box">
+                        <div class="subject-box">
+                            <div class="subject">
+                                <h1>CVSU 101</h1>
+                            </div>
+
+                            <div class="subject-name">
+                                <p>Institutional Orientation</p>
+                            </div>
+
+                            <div class="year-sem">
+                                <p id="year">1st Year</p>
+                                <p id="sem">1st Sem</p>
+                            </div>
+
+                            <div class="sched-code">
+                                <h3>PROFESSORS:</h3>
+                                <p>202512237 - Karen Mendiola</p>
+                                <p>202512236 - Kevin Francisco</p>
+                                <p>202512235 - Althea Catalan</p>
+                                <p>202512234 - Jerome Garcia</p>
+                                <p>202512333 - Kate Ann Gomez</p>
+                            </div>
+
+                            <div class="two-btn">
+                                <button id="link-btn"><a href="#" id="book"><img src="assets/images/icons/dashboard-book.svg"></a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subj-box">
+                        <div class="subject-box">
+                            <div class="subject">
+                                <h1>NSTP 1</h1>
+                            </div>
+
+                            <div class="subject-name">
+                                <p>National Service Training Program 1</p>
+                            </div>
+
+                            <div class="year-sem">
+                                <p id="year">1st Year</p>
+                                <p id="sem">1st Sem</p>
+                            </div>
+
+                            <div class="sched-code">
+                                <h3>PROFESSORS:</h3>
+                                <p>202512237 - Karen Mendiola</p>
+                                <p>202512236 - Kevin Francisco</p>
+                                <p>202512235 - Althea Catalan</p>
+                                <p>202512234 - Jerome Garcia</p>
+                                <p>202512333 - Kate Ann Gomez</p>
+                            </div>
+
+                            <div class="two-btn">
+                                <button id="link-btn"><a href="#" id="book"><img src="assets/images/icons/dashboard-book.svg"></a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subj-box">
+                        <div class="subject-box">
+                            <div class="subject">
+                                <h1>GNED 02</h1>
+                            </div>
+
+                            <div class="subject-name">
+                                <p>Ethics</p>
+                            </div>
+
+                            <div class="year-sem">
+                                <p id="year">1st Year</p>
+                                <p id="sem">1st Sem</p>
+                            </div>
+
+                            <div class="sched-code">
+                                <h3>PROFESSORS:</h3>
+                                <p>202512237 - Karen Mendiola</p>
+                                <p>202512236 - Kevin Francisco</p>
+                                <p>202512235 - Althea Catalan</p>
+                                <p>202512234 - Jerome Garcia</p>
+                                <p>202512333 - Kate Ann Gomez</p>
+                            </div>
+
+                            <div class="two-btn">
+                                <button id="link-btn"><a href="#" id="book"><img src="assets/images/icons/dashboard-book.svg"></a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subj-box">
+                        <div class="subject-box">
+                            <div class="subject">
+                                <h1>GNED 02</h1>
+                            </div>
+
+                            <div class="subject-name">
+                                <p>Ethics</p>
+                            </div>
+
+                            <div class="year-sem">
+                                <p id="year">1st Year</p>
+                                <p id="sem">1st Sem</p>
+                            </div>
+
+                            <div class="sched-code">
+                                <h3>PROFESSORS:</h3>
+                                <p>202512237 - Karen Mendiola</p>
+                                <p>202512236 - Kevin Francisco</p>
+                                <p>202512235 - Althea Catalan</p>
+                                <p>202512234 - Jerome Garcia</p>
+                                <p>202512333 - Kate Ann Gomez</p>
+                            </div>
+
+                            <div class="two-btn">
+                                <button id="link-btn"><a href="#" id="book"><img src="assets/images/icons/dashboard-book.svg"></a></button>
+                            </div>
+                        </div>
+                    </div> <!-- sched-box -->
+
+                </div> 
+            </div> 
+        </div> 
+    </body>
 </html>
