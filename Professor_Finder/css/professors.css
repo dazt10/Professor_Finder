@@ -3,48 +3,354 @@
     padding: 0px;
 }
 
-html, body{
-    max-width: 100%;
-    overflow: hidden;
-}
-
-
 body{
-    background-color: lightgreen;
+    background-color: green;
+    overflow: hidden;
+    font-family: 'Instrument', sans-serif;
 }
 
-.nav{
+#cvsu-bg{
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.4);
-    border: 1px solid;
-    border-radius: 35px;
-    height: 750px;
-    width: 250px;
-    top: 100px;
-    left: 100px;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
 
-.page{
-    position: absolute;
-    background-color: white;
-    border: 1px solid;
-    border-radius: 35px;
-    height: 750px;
-    width: 1400px;
-    top: 100px;
-    left: 400px;
+.container{
+    background-color: rgba(144, 238, 144, 0.6);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    gap: 2rem;
 }
 
-.prog-nav ul li{
-    list-style: none;
-    border: 1px solid grey;
-    background-color: rgba(255, 255, 255, 0.5);
+.nav-box{
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 30px;
+    background-color: rgb(255,255,255,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 20px;
+    height: 90vh;
+    box-shadow: 1px 0px 8px;
+}
+
+.program{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 15px;
-    border-radius: 35px;
-    height: 50px;
+    border: 1px solid lightgreen;
+    border-radius: 30px;
+    width: 20vh;
+    height: 4.5vh;
+    background: linear-gradient(to bottom, #416720, #619A2F, #81CD3F);
+    box-shadow: 0 0 7px;
 }
 
-.prog-nav a{
-    color:black;
+.program:hover, .sidenav a:hover{
+    background: linear-gradient(to bottom, #4f7e27, #6fb136, #8bdd43);
+    cursor: pointer;
+}
+
+.program ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.program a{
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*account nav*/
+.account-navigation {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.889);
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 180px;
+
+}
+
+.account-navigation ul li {
+    list-style: none;
+}
+
+.account-navigation a {
+    text-decoration: none;
+    color: #275100;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.student-info p{
+    text-decoration: none;
+    color: #275100;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.profile:hover .account-navigation {
+    display: block;
+}
+
+.account-navigation::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 28%;
+    transform: translateX(-50%);
+    border-width: 20px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+#account, #settings, #messages, #logout {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 6px;
+    padding: 0 20px;
+    margin: 5px 0;
+}
+
+.profile{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#account-circle {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* main page */
+.main-page{
+    border: 2px solid rgb(255, 255, 255);
+    /* border: 2px solid rgba(255,255,255,0.3); */
+    border-radius: 30px;
+    background-color: #fdf8f2;
+    /* background-color: rgb(255,255,255,0.3); */
+    padding: 20px;
+    width: 60%;
+    height: 90vh;
+    box-shadow: 0px 0px 10px;
+}
+
+
+/* section boxes */
+.subject-container{
+    padding: 20px 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    text-align: center;
+    gap: 1em;
+    height: 80vh;
+    overflow-y: auto;  /* --- if madami and need ng scroll bar*/ 
+    scrollbar-width: none;
+}
+
+.subj-box{
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px;
+}
+
+.subject-box{
+    padding: 15px;
+}
+
+.subject{
+    margin-bottom: 5px;
+}
+
+.subject-name{
+    margin-bottom: 10px;
+}
+
+.year-sem{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 15px;
+    color: white;
+}
+
+#year{
+    background-color: #4B8717;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+#sem{
+    background-color: #71C22A;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.sched-code{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid grey;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px;
+    padding: 15px 25px;
+    margin-bottom: 15px;
+}
+
+.sched-code p{
+    text-align: left;
+    max-width: 30ch;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.two-btn{
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    gap: 1em;
+}
+
+#link-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 13px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 3px;
+}
+
+#link-btn img{
+    scale: 1.3;
+}
+
+#link-btn:hover{
+    cursor: pointer;
+}
+
+.two-btn a{
+    text-decoration: none;
+    color: black;
+}
+
+/*sidenav*/
+.sidenav {
+    display: none;
+    position: absolute;
+    margin-left: 16.5%;
+    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.889);
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+
+.sidenav a{
+    display: block;
+    text-align: center;
+    background: linear-gradient(to bottom, #416720, #619A2F, #81CD3F);
+    padding: 8px 20px;
+    margin: 5px 0;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-size: 19px;
+}
+
+.program:hover .sidenav {
+    display: block;
+}
+
+.sidenav::after {
+    content: "";
+    position: absolute;
+    top: 46px;
+    left: -18%;
+    transform: translateY(-50%);
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+
+/* dropdown */
+.program-dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.program-toggle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 375px;
+    padding: 10px 15px;
+    background-color: white;
+}
+
+.program-toggle span{
+    font-weight: 700;   
+}
+
+.program-list{
+    display: none; 
+    position: absolute;
+    background-color: #ffffff;
+    width: 375px;
+    height: 30vh;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    list-style: none;
+    padding: 10px 0;
+    margin: 5px 0 0;
+    border-radius: 4px;
+    z-index: 1;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.program-name-list{
+    border-bottom: 1px solid grey;
+}
+
+.program-list.show {
+    display: block;
+}
+
+.program-list li a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.program-list li a:hover {
+    background-color: #f1f1f1;
 }
