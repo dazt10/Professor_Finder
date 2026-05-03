@@ -23,9 +23,11 @@ body{
     display: flex;
     justify-content:center;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
     width: 100%;
-    height: 100vh;
-    gap: 20em;
+    min-height: 100vh;
+    gap: 2rem;
 }
 
 /* LOGO AND TITLE */
@@ -34,12 +36,14 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    width: 25%;
+    max-width: 400px;
+    width: 100%;
     height: auto;
 }
 
 #cvsu-logo{
     width: 50vh;
+    max-width: 250px;
     height: auto;
 }
 
@@ -51,11 +55,12 @@ body{
 }
 
 .cvsu-main{
-    font-size: 90px;
+    font-size: 2.5rem;
 }
 
 .prof-finder{
-    font-size: 50px;
+    font-size: 1.5rem;
+
 }
 
 /* LOGIN BOX */
@@ -69,6 +74,9 @@ body{
     border: none;
     border-radius: 15px;
     box-shadow: 0px 0px 15px;
+    max-width: 350px;
+    width: 100%;        
+    height: auto;
 }
 
 .login-transp-box h1{
