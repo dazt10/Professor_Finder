@@ -83,26 +83,53 @@
           <div class="setting-title">
             <h1 id="settings">SETTINGS</h1>
           </div>
+
             <!-- profile container -->
             <div class="profile-box">
                 <p id="profile"><img src="assets/images/icons/white account icon.svg" id="account-icon"/>Profile</p>
-                <div class="row">
+                <!-- Name row -->
+                <div class="row" id="nameRow">
                     <div>
                         <p id="label">Name</p>
                         <p id="value">first name surname</p>
                     </div>
-                    <div class="row clickable">
+                    <div class="arrow-btn">
                         <img src="assets/images/icons/right.svg" id="right-icon"/>
                     </div>
                 </div>
-                <div class="row">
+                <!-- Name Modal -->
+                <div class="modal" id="nameModal">
+                  <div class="modal-box">
+                    <div class="modal-header">
+                      <span class="close" id="closeName">&times;</span>
+                      <h2>Change Name</h2>
+                    </div>
+                    <hr>
+                    <input type="text" class="input" placeholder="Name"/>
+                    <button class="save-btn">Save</button>
+                  </div>
+                </div>
+                <!-- Username row -->
+                <div class="row" id="usernameRow">
                     <div>
                         <p id="label">Username</p>
                         <p id="value">username</p>
                     </div>
-                    <div class="row clickable">
+                    <div class="arrow-btn">
                         <img src="assets/images/icons/right.svg" id="right-icon"/>
                     </div>
+                </div>
+                <!-- Username Modal -->
+                <div class="modal" id="usernameModal">
+                  <div class="modal-box">
+                    <div class="modal-header">
+                      <span class="close" id="closeUsername">&times;</span>
+                      <h2>Change Username</h2>
+                    </div>
+                    <hr>
+                    <input type="text" class="input" placeholder="Username"/>
+                    <button class="save-btn">Save</button>
+                  </div>
                 </div>
                 <div>
                     <p id="label">Student Number</p>
@@ -117,24 +144,55 @@
             <!-- account setting container -->
             <div class="account-setting-box">
                 <p id="account-setting"><img src="assets/images/icons/white account icon.svg" id="account-icon"/>Account Settings</p>
-                <div class="row">
+                <!-- Password row -->
+                <div class="row" id="passwordRow">
                     <div>
                         <p id="label">Password</p>
                         <p id="value">********</p>
                     </div>
-                    <div class="row clickable">
+                    <div class="arrow-btn">
                         <img src="assets/images/icons/right.svg" id="right-icon"/>
                     </div>
                 </div>
-                <div class="row">
+                <!-- Password Modal -->
+                <div class="modal" id="passwordModal">
+                  <div class="modal-box">
+                    <div class="modal-header">
+                      <span class="close" id="closePassword">&times;</span>
+                      <h2>Change Password</h2>
+                    </div>
+                    <hr>
+                    <input type="text" class="input" placeholder="**********"/>
+                    <input type="text" class="input" placeholder="New Password"/>
+                    <input type="text" class="input" placeholder="Confirm Password"/>
+                    <button class="save-btn">Update</button>
+                  </div>
+                </div>
+                <!-- Delete Account row -->
+                <div class="row" id="deleteAccountRow">
                     <div>
                         <p id="label">Delete Account</p>
                         <p id="value">delete existing account</p>
                     </div>  
-                    <div class="row clickable">
+                    <div class="arrow-btn">
                         <img src="assets/images/icons/right.svg" id="right-icon"/>
                     </div>
                 </div>
+                <!-- Delete Account Modal -->
+                <div class="modal" id="deleteAccountModal">
+                  <div class="modal-box">
+                    <p>Are you sure you want to delete your account?</p>
+                    <br>
+                    <p>All your data will be permanently deleted.</p>
+                    <div class="deleteAccountBtn">
+                      <button class="cancel-btn" id="cancelDelete">Cancel</button>
+                      <button class="save-btn">Delete Account</button>
+
+                    </div>
+                    
+                  </div>
+                </div>
+
                 <div>
                     <p id="label">Logout</p>
                 </div>
@@ -144,5 +202,6 @@
         </div>
       </div>
     </div>
+    <script src="js/setting.js"></script>
   </body>
 </html>
