@@ -5,7 +5,7 @@
 
 body{
     background-color: green;
-    overflow: hidden;
+    overflow-x : hidden;
     font-family: 'Instrument', sans-serif;
 }
 
@@ -20,11 +20,12 @@ body{
 .container{
     background-color: rgba(144, 238, 144, 0.6);
     display: flex;
+    flex-wrap: wrap;
     justify-content:center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
-    height: 100vh;
-    gap: 2rem;
+    min-height: 100vh;
+    gap: 1.5rem;
 }
 
 .nav-box{
@@ -37,7 +38,9 @@ body{
     justify-content: space-between;
     gap: 1rem;
     padding: 20px;
-    height: 90vh;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
     box-shadow: 1px 0px 8px;
 }
 
@@ -48,10 +51,13 @@ body{
     text-align: center;
     border: 1px solid lightgreen;
     border-radius: 30px;
-    width: 20vh;
-    height: 4.5vh;
+    max-width: 200px;
+    width: 100%;
+    padding: 8px 10px;
+    height: auto;
     background: linear-gradient(to bottom, #416720, #619A2F, #81CD3F);
     box-shadow: 0 0 7px;
+    overflow: hidden;
 }
 
 .program:hover, .sidenav a:hover{
@@ -154,8 +160,10 @@ body{
     background-color: #fdf8f2;
     /* background-color: rgb(255,255,255,0.3); */
     padding: 20px;
-    width: 60%;
-    height: 90vh;
+    flex: 1;
+    width: 100%;
+    height: auto;
+    min-height: 80vh;
     box-shadow: 0px 0px 10px;
 }
 
@@ -164,11 +172,11 @@ body{
 .sched-container{
     padding: 20px 5px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: auto;
     text-align: center;
-    gap: 1em;
-    height: 80vh;
+    gap: 1rem;
+    height: auto;
     overflow-y: auto; /*--- if madami and need ng scroll bar*/ 
     scrollbar-width: none;
 }
@@ -314,6 +322,12 @@ body{
     width: 375px;
     padding: 10px 15px;
     background-color: white;
+}
+
+.program-toggle,
+.program-list {
+    width: 100%;
+    max-width: 375px;
 }
 
 .program-toggle span{
