@@ -19,10 +19,11 @@ body{
 .container{
     background-color: rgba(144, 238, 144, 0.6);
     display: flex;
+    flex-wrap: wrap;
     justify-content:center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     gap: 2rem;
 }
 
@@ -36,7 +37,7 @@ body{
     justify-content: space-between;
     gap: 1rem;
     padding: 20px;
-    height: 90vh;
+    min-height: 90vh;
     box-shadow: 1px 0px 8px;
 }
 
@@ -47,10 +48,13 @@ body{
     text-align: center;
     border: 1px solid lightgreen;
     border-radius: 30px;
-    width: 20vh;
-    height: 4.5vh;
+    max-width: 200px;
+    width: 100%;
+    padding: 8px 10px;
+    height: auto;
     background: linear-gradient(to bottom, #416720, #619A2F, #81CD3F);
     box-shadow: 0 0 7px;
+    overflow: hidden;
 }
 
 .program:hover, .sidenav a:hover{
@@ -208,7 +212,7 @@ body{
     align-items: center;
     border: 1px solid lightgreen;
     border-radius: 30px ;
-    height: 4.5vh;
+    min-height: 4.5vh;
     padding: 0 50px;
     background: linear-gradient(to bottom, #416720, #619A2F, #81CD3F);
     color: white;
@@ -223,14 +227,14 @@ body{
     align-items: center;
     border: 1px solid lightgreen;
     border-radius: 30px ;
-    width: 15vh;
-    height: 4.5vh;
+    min-width: 120px;
+    min-height: 4.5vh;
     background: linear-gradient(to bottom, #416720, #619A2F, #81CD3F);
     box-shadow: 0 0 7px;
 }
 
 #back-btn img{
-    scale: 1.5;
+    scale: 1.0;
     transform: translate(-50%, 10%);
 }
 
@@ -289,23 +293,28 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding: 8px 16px;
+    min-width: 220px;
+
     border: 1px solid lightgreen;
     border-radius: 30px;
-    width: 25vh;
-    height: 4.5vh;
     background: linear-gradient(to bottom, #416720, #619A2F, #81CD3F);
     box-shadow: 0 0 7px;
 }
 
 #contact-btn img{
-    scale: 1.2;
+    scale: 0.9;
     transform: translate(-40%, 20%);
 }
 
 #contact-btn a{
+    display: flex;
+    align-items: center;
+    gap: 6px;
     text-decoration: none;
     color: white;
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 700;
     flex-grow: 1;
 }
